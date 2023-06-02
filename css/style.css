@@ -55,7 +55,7 @@ a:hover {
     top: 0;
     height: 60px;
     z-index: 2;
-    color:white;
+    color:rgb(255, 5, 5);
     padding-left: 10px;
     font-size: 2em;
 }
