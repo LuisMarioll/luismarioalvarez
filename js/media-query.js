@@ -9,6 +9,6 @@ menuBar.addEventListener("click", function() {
     }
     else {
         mainMenu.classList.add("main-menu");
-        mainMenu.classList.remove("main-menu-blovk");
+        mainMenu.classList.remove("main-menu-block");
     }
 });
