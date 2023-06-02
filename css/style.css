@@ -47,17 +47,19 @@ a:hover {
     cursor: pointer;
     background-color: rgb(62, 50, 50);
 }
-/* .hamburguer {   
-    background-color: black;
+
+.style-icon {   
     display: flex;
     align-items: center;
     width: 180px;
     top: 0;
     height: 60px;
     z-index: 2;
+    color:white;
+    padding-left: 10px;
+    font-size: 2em;
 }
 .menu-bar{
     color: rgb(255, 255, 255);
     font-size: 2em;
 }
- */
