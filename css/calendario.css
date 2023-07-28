@@ -14,7 +14,7 @@
 }
 .calendario-box {
     width: 80%;
-    background-color: rgb(216, 245, 249);
+    background-color: #bdbdbd;
     border-radius: 47px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -37,18 +37,18 @@
     font-size: 5em;
     grid-column-start: 1;
     grid-column-end: 8;
-    background-color: orange;
+    background-color: #c32727;
 }
 .nombre-dia {
-    background-color: rgb(18, 151, 16);
+    background-color: #c32727;
     border-radius: 43%;
     font-family:'waltograph', sans-serif ;
     color: white;
     font-size: 4em;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-}
+    display: flex;     
+    justify-content: center;      
+    align-items:center;     
+}     
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'waltograph';
