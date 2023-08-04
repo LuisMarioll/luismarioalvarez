@@ -4,7 +4,7 @@
     font-family: Verdana, sans-serif;
 }
 header {
-    background-color: darkcyan;
+    background-color: rgb(206, 152, 71);
     width: 100%;
     height: 100px;
     display: grid;
@@ -13,13 +13,13 @@ header {
 }
 .logo {
     grid-area: logo;
-    background-color: rgb(88, 214, 226);
+    background-color: rgb(244, 202, 144);
     width: 100%;
     height: 100%;
 }
 .menu {
     grid-area: menu;
-    background-color: dodgerblue;
+    background-color: rgb(245, 151, 19);
     height: 100%;
     width: 100%;
     
@@ -39,12 +39,12 @@ header {
     grid-area: img-principal;
     width: 100%;
     height: 100%;
-    background-color: rgb(164, 202, 204);
+    background-color: rgb(137, 93, 36);
 }
 .article {
     width: 100%;
     height: 350px;
-    background-color: rgb(64, 64, 64, .8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .article-1 {
     grid-area: article-1;
