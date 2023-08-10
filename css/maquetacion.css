@@ -89,7 +89,7 @@ header {
 }
 
 .style-box {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +145,7 @@ header {
 }
 
 .main-nav {
-    background-color:rgb(64, 64, 64) ;
+    background-color:rgb(209, 201, 201) ;
     height: 100px;
     width: 100%;
     font-size: 1.7em;
@@ -162,11 +162,11 @@ header {
 }
 .item-style:hover {
     cursor: pointer;
-    background-color: rgb(110,110,110);
+    background-color: rgb(241, 233, 233);
 }
 a {
    text-decoration: none;
-   color: rgb(0, 0, 0);
+   color: rgb(10, 10, 10);
 }
 .menu-bar {
     display: none;
@@ -186,7 +186,7 @@ a {
       }
       .main-menu-block {
         height: 100vh;
-        color: rgba(218, 222, 218, 0.2);
+        color: rgba(220, 220, 220, 0.2);
         list-style: none;
         text-align: left; 
         position: fixed;
@@ -196,7 +196,7 @@ a {
       }
       .item-style {
         display: block;
-        border-bottom: 1px solid rgb( 225, 225, 225,.2);
+        border-bottom: 1px solid rgb(220, 220, 220, 0.2);
       }
       .menu-bar {
         position: relative;
