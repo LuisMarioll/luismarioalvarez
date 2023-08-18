@@ -130,6 +130,26 @@ h1 {
     transform: scale(1.4);
 }
 
+/* .footer {
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 750px;
+    gap: 20px;
+} */
+.footer {
+    position: flex;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    z-index: 10;
+}
+
+.style-img-mini {
+    z-index: 20;
+}
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Poppins';
