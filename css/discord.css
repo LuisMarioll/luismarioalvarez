@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(64, 78, 237);
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template: "empty-left         logo   menu  btn-login empty-right"        100px /
+                    minmax(20px, 1fr)  200px  800px 100px     minmax(20px, 1fr);
+}
+
+
+.logo {
+    grid-area: logo;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 78, 237);
+}
+
+.img-logo {
+    width: 90%;
+    height: 100px;
+}
+.botton {
+    
+    font-size: 1em;
+    background-color: white;
+}
+.btn-login {
+    grid-area: btn-login;
+    background-color: peru;
+    border-radius: 40px 40px 40px 40px;
+    justify-content: center;
+}
+.menu {
+    grid-area: menu;
+    width: 100%;
+    height: 100%;
+}
+
+.main-contents {
+    width: 100%;
+    height: 600px;
+    /*     gap: 20px; */
+    column-gap: 80px;
+    row-gap: 40px;
+    display: grid;
+    grid-template: "img-principal img-principal img-principal  img-principal img-principal" auto "empty-left  article-1   article-2  article-3  empty-right" 500px "empty-left  article-4   article-5  article-6  empty-right" 500px /
+                    1fr           350px         350px          350px            1fr;
+}
+
+.img-fondo-grande {
+    width: 100%;
+    height: 600px;
+}
+
+.img-fondo {
+    width: 100%;
+    height: 500px;
+}
+
+.img-principal {
+    grid-area: img-principal;
+    width: 100%;
+    height: 500px;
+}
+.main-nav {
+    background-color:rgb(64, 78, 237);
+    height: 100px;
+    width: 100%;
+    font-size: 1.0em;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 700;
+}
+.main-menu {
+    list-style: none;
+    text-align: center;
+}
+.item-style{
+    padding: 40px 30px 28px 30px;
+    display: inline-block;
+}
+.item-style:hover {
+    cursor: pointer;
+    background-color: rgb(86, 98, 235);
+}
+a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 1,3em;
+}
+.menu-bar {
+    display: none;
+}
+
+h1 {
+    display: flex;
+    top: 200px;
+    color: white;
+    position: absolute;
+    left: 700px;
+    font-size: 3.5em;
+}
+.texto-prin {
+    text-align: justify;
+    line-height: 1.5em;
+    display: flex;
+    top: 300px;
+    color: white;
+    position: absolute;
+    left: 700px;
+    font-size: 1em;
+}
