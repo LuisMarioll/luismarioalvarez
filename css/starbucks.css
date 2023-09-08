@@ -1,27 +1,27 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
 }
-
 header {
-    display: grid;
-    grid-template: "empty-left main-logo box-main-menu empty-right" 110px /
-                    140px      1fr       2fr           40px;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 15;
+  width: 100%;
+  display: grid;
+  grid-template: "empty-left main-logo box-main-menu empty-right" 140px /
+                    140px       1fr       2fr           50px;   
 }
-
 .main-logo {
     grid-area: main-logo;
 }
-
 .img-logo {
-    padding: 20px 0 0 90px;    
+    padding-top: 40px;
 }
-
 .box-main-menu {
     grid-area: box-main-menu;
 }
-
 .main-menu {
     height: 100%;
     display: flex;
@@ -29,68 +29,69 @@ header {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    padding-right: 150px;
 }
-
 .main-menu > li > a {
+    color: rgb(64,64,64,.9);
     text-decoration: none;
     display: block;
     margin: 0 30px;
     font-size: 1.3em;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
 }
-
 .main-circle {
-    background-color: rgb(2, 104, 64);
     width: 1800px;
     height: 1800px;
     border-radius: 900px;
     position: fixed;
     top: 280px;
     right: -950px;
+    z-index: 5;
 }
-
+.main-circle-green {
+  background-color:rgb(2,104,64);
+}
+.main-circle-light-pink {
+  background-color: rgb(230,112,147);
+}
+.main-circle-dark-pink {
+  background-color: rgb(194,73,159);
+}
 h1 {
-    font-size: 4em;
-    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    font-family: Poppins, sans-serif;
     font-weight: 500;
 }
-
 .title-color {
-    color: rgb(2, 104, 64);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4em;
+    color: rgb(2,104,64);
+    font-family: Poppins, sans-serif;
     font-weight: 900;
+    font-size: 1.3em;
 }
-
 .main-content {
     margin-top: 140px;
     display: grid;
-    grid-template: "empty-left product-text empty-center product-img empty-right" 70px /
-                    140px      5fr          300px        3fr         40px    
+    grid-template: "empty-left product-text empty-center product-img social-media" / 
+                    140px       5fr         300px         4fr        80px;
 }
-
 .product-text {
     grid-area: product-text;
 }
-
 .description-text {
     margin-top: 30px;
-    color: rgb(64, 62, 62);
-    font-family: 'Poppins', sans-serif;
+    color: rgb(96,96,93);
+    font-family: Poppins, sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
     letter-spacing: 0.05em;
     font-weight: 500;
 }
-
 .button-learn {
-    width: 150px;
+    width: 200px;
     margin-top: 30px;
     height: 50px;
     border-radius: 25px;
-    background-color: rgb(2, 104, 64);
+    background-color: rgb(2,104,64);
     color: white;
     font-weight: 700;
     text-align: center;
@@ -98,58 +99,64 @@ h1 {
     font-size: 1.2em;
     letter-spacing: 0.1em;
 }
-
 .product-img {
     grid-area: product-img;
     z-index: 10;
     /* position: relative;
     top: 100px;
     left: 150px; */
-
 }
-
-.redes-links {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%);
-    display: flex;
-    right: 20px;
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-    right: 25px;
-}
-
-.redes-links a {
+.social-media {
+    position: fixed;
+    right: 0;
+    top: 350px;
+    grid-area: social-media;
+    z-index: 10;
+    font-size: 2em;
     color: white;
-    font-size: 30px;
-    transition: 0.4s;
-}
-
-.redes-links a:hover {
-    transform: scale(1.4);
-}
-
-/* .footer {
-    position: absolute;
     display: flex;
-    bottom: 30px;
-    left: 750px;
-    gap: 20px;
-} */
-.footer {
-    position: flex;
-    bottom: 0;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    /* margin-top: -100px; */
+}
+footer {
+    bottom: 20px;
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 40px;
     z-index: 10;
 }
-
 .style-img-mini {
     z-index: 20;
+    position: relative;
+    transition: all 600ms;
+    top: 0;
 }
+.style-img-mini:hover {
+  cursor: pointer;
+}
+.mini-green:hover {
+  top: -30px;
+}
+.mini-light-pink:hover {
+  top: -30px;
+}
+.mini-dark-pink:hover {
+  top: -30px;
+}
+/* Fonts */
+/* poppins-regular - latin */
+/* poppins-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Poppins';
