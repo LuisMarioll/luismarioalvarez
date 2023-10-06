@@ -29,16 +29,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.gallery-img {
-  width: 444px;
-  border-radius: 13px;
-}
-.gallery-img1 {
-  position: relative;
-  left: 60px;
-  width: 420px;
-  border-radius: 13px;
-}
+
 @media (min-width: 1115px) {
   .header__navigation {
     width: 590px;
@@ -425,10 +416,10 @@ body {
 .modal-gallery__close {
   width: 16px;
 }
-.modal-gallery__close:hover {
+/* .modal-gallery__close:hover {
   cursor: pointer;
   content: url("../images/icon-close-orange.svg");
-}
+} */
 .modal-gallery__image-container {
   background-image: url("../images/image-product-1.jpg");
   height: 446px;

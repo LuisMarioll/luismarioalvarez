@@ -99,7 +99,7 @@ thumbnails = [...thumbnails]
 thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', event=>{
         console.log(event.target.id)
-        imageContainer.style.backgroundImage = `url('../images/image-product-${event.target.id}.jpg')`
+        imageContainer.style.backgroundImage = `url('img/image-product-${event.target.id}.jpg')`
     });
 });
 
@@ -111,7 +111,7 @@ modalthumbnails = [...modalthumbnails]
 modalthumbnails.forEach(modalthumbnail => {
     modalthumbnail.addEventListener('click', event=>{
         console.log(event.target.id.slice(-1))
-        modalImageContainer.style.backgroundImage = `url('../images/image-product-${event.target.id.slice(-1)}.jpg')`
+        modalImageContainer.style.backgroundImage = `url('img/image-product-${event.target.id.slice(-1)}.jpg')`
     });
 });
 
@@ -157,7 +157,7 @@ function drawProductInModal(){
             <p class="cart-modal__product">Autumn Limited Edition...</p>
             <p class="cart-modal__price">$125 x3 <span>$375.00</span> </p>
             </div>
-            <img class="cart-modal__delete" src="./images/icon-delete.svg" alt="delete">
+            <img class="cart-modal__delete" src="./img/icon-delete.svg" alt="delete">
         </div>
         <button class="cart-modal__chekount" >Checkout</button>`
     deleteProduct()
@@ -171,7 +171,7 @@ function changeNextImage(imgContainer){
     }else{
         imgIndex++;
     }
-    imgContainer.style.backgroundImage = `url('../images/image-product-${imgIndex}.jpg')`
+    imgContainer.style.backgroundImage = `url('img/image-product-${imgIndex}.jpg')`
 }
 
 function changePreviusImage(imgContainer){
@@ -180,5 +180,5 @@ function changePreviusImage(imgContainer){
     }else{
         imgIndex--;
     }
-    imgContainer.style.backgroundImage = `url('../images/image-product-${imgIndex}.jpg')`
+    imgContainer.style.backgroundImage = `url('img/image-product-${imgIndex}.jpg')`
 }
