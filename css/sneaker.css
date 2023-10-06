@@ -29,6 +29,16 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.gallery-img {
+  width: 444px;
+  border-radius: 13px;
+}
+.gallery-img1 {
+  position: relative;
+  left: 60px;
+  width: 420px;
+  border-radius: 13px;
+}
 @media (min-width: 1115px) {
   .header__navigation {
     width: 590px;
