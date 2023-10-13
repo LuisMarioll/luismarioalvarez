@@ -152,7 +152,7 @@ closeModalNavbar.addEventListener('click', ()=>{
 function drawProductInModal(){
     productContainer.innerHTML = `
         <div class="cart-modal__details-container">
-            <img class="cart-modal__image" src="./images/image-product-1-thumbnail.jpg" alt="">
+            <img class="cart-modal__image" src="./img/image-product-1-thumbnail.jpg" alt="">
             <div>
             <p class="cart-modal__product">Autumn Limited Edition...</p>
             <p class="cart-modal__price">$125 x3 <span>$375.00</span> </p>

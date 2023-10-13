@@ -7,9 +7,9 @@
 body {
     overflow-x: hidden;
 }
-header {
+/* header {
     height: 95px;
-}
+} */
 .box-carousel {
     width: 400%;
     overflow: hidden;
