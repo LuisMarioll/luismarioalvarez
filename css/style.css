@@ -123,7 +123,7 @@ body{
 }
 /* SECCION S E R V I C I O S */
 .servicios{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     padding: 0 20px;
     position: relative;
@@ -149,7 +149,7 @@ body{
 }
 .servicios .icono{
     width: 70px;
-    height: 70px;
+    height: 60px;
     margin: auto;
     border-radius: 50%;
     display: flex;
