@@ -48,7 +48,7 @@ body{
     margin-right: 20px;
 }
 #inicio header nav a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
     padding: 5px 10px;
@@ -56,7 +56,7 @@ body{
     border: 2px solid transparent;
 }
 #inicio header nav a:hover{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
 }
 .inicio .redes a{
     text-decoration: none;
@@ -373,7 +373,7 @@ body{
 }
 
 footer{
-    background-color: #000;
+    background-color: #010101;
     color: #fff;
     padding: 7px 0;
     font-size: 14px;
@@ -411,7 +411,7 @@ footer{
         display: none;
     }
     #nav.responsive{
-        background-color: rgba(0,0,0,.9);
+        background-color: rgba(36, 34, 34, 0.9);
         top: 0;
         left: 0;
         height: 100vh;
@@ -446,7 +446,7 @@ footer{
     }
     .inicio .fila .col .contenedor-img{
         width: 50%;
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .servicios{
@@ -458,11 +458,11 @@ footer{
         margin-bottom: 0;
     }
     .servicios .fila .col{
-        width: 70%;
+        width: 90%;
         margin: auto;
     }
     .servicios .fila .col .card{
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     .habilidades{
         position: static;
